@@ -23,7 +23,8 @@ jQuery.fn.autobox = function(options){
         'position' : 'absolute',
         'z-index' : 10,
         'top' : textInput.position().top+'px',
-        'left' : textInput.position().left+'px'
+        'left' : textInput.position().left+'px',
+				'width' : textInput.width()+'px'
       });
       
       $(window).resize(function(){
