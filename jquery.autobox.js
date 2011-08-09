@@ -40,7 +40,7 @@ jQuery.fn.autobox = function(options){
         textInput.show();
         textInput.css({'visibility' : 'visible'});
         textInput.focus();
-      });
+      }).attr('tabindex', textInput.attr('tabindex'));
       
       textInput.before(newInput);
     }
